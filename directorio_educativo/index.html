@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Directorio Educativo Kennedy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ventana acerca de -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="cerrar">&times;</span>
+    <h2>Sobre el proyecto</h2>
+    <p>
+      Este proyecto, <strong>EduKennedy</strong>, fue desarrollado como parte de la Fase 4 del curso 
+      <em>Proyecto de Grado</em> de la UNAD.  
+      Su objetivo es ofrecer un prototipo funcional de un 
+      <strong>directorio centralizado de recursos educativos gratuitos</strong> 
+      para jóvenes de la localidad de Kennedy y en Colombia en general.  
+      La idea es facilitar el acceso a oportunidades de formación técnica, tecnológica y de desarrollo personal.  
+    </p>
+    <p>
+      Nivel de madurez tecnológica: <strong>TRL 5</strong>  
+      (prototipo funcional validado en entorno relevante).
+    </p>
+  </div>
+</div>
+
+<header class="navbar">
+  <div class="logo">📘 <span class="edu">Edu</span><span class="kennedy">Kennedy</span></div>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#recursos">Recursos</a>
+    <a href="#" id="acerca-btn">Acerca de</a>
+  </nav>
+</header>
+
+  <!-- principal -->
+  <section class="hero">
+    <h1>Encuentra oportunidades educativas en Kennedy</h1>
+    <p>Descubre cursos, talleres y programas de formación gratuitos</p>
+    <div class="search-box">
+      <input type="text" id="buscar" placeholder="Buscar cursos o talleres...">
+      
+      <select id="filtro">
+        <option value="todos">Todos los tipos</option>
+        <option value="curso corto">Curso corto</option>
+        <option value="técnico">Técnico</option>
+        <option value="tecnólogo">Tecnólogo</option>
+      </select>
+
+      <button id="buscarBtn">Filtrar</button>
+    </div>
+  </section>
+
+  <!-- recursos -->
+  <section id="recursos" class="recursos">
+    <h2>Recursos disponibles</h2>
+    <div id="lista-recursos" class="grid"></div>
+  </section>
+
+  <!--  pie de pagina -->
+  <footer>
+    <p>© 2025 EduKennedy | Proyecto académico UNAD - Fase 4</p>
+    <p>Prototipo TRL5 - Directorio de recursos educativos</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
